@@ -1,0 +1,198 @@
+BITWISE OPERATORS
+==================
+==> ARE ALWAYS BE DEFINED WITH INTEGERS AND BOOLEAN ONLY
+==> BITWISE OPERATORS ==> DATA
+		BY CONVERTING DATA INTO BINARY (BITS)
+==> THE BITWISE OPERATORS ARE:
+	1) BITWISE AND ==> & ==> BINARY
+	2) BITWISE OR ==> | ==> BINARY
+	3) BITWSIE XOR (EXCLUSIVE OR) ==> ^ ==> BINARY
+	4) BITWISE COMPLEMENT ==> ~ ==> UNARY ==> 2's complement
+	5) LEFT SHIFT OPERATOR ==> << ==> BINARY
+	6) RIGHT SHIFT OPERATOR ==> >> ==> BINARY
+==> LIKE LOGICAL OPERATORS, SOME OF BITWISE OPERATORS ALSO ALLOWED TO DEFINE WITH TRUTH TABLES.
+
+Note:
+====
+	==> IN JAVA,
+		UNSIGNED RIGHT SHIFT OPERATION (>>>) ==> FOR ONLY +EVE NUMBER
+	==> IN PYTHON, UNSIGNED RIGHT SHIFT IS NOT SUPPORTED.
+
+1) BITWISE AND ==> &
+==================
+
+	a	b	a & b
+	====================
+	0b0	0b0	0b0
+	0b0	0b1	0b0
+	0b1	0b0	0b0
+	0b1	0b1	0b1
+
+print(0b0 & 0b0)
+print(0b0 & 0b1)
+print(0b1 & 0b0)
+print(0b1 & 0b1)
+
+# print() always able to print the number in decimal format only
+# with decimal
+
+print(10 & 20)
+print(0 & 10)
+print(10 & 0)
+print(-1 & 30)
+print(-100 & 20)
+print(100 & -1)
+print(30 & -2)
+
+
+2) BITWISE COMPLEMNT
+====================
+==> USED TO FIND THE 2'S COMPLEMENT OF THE NUMBER
+	+ ==> -
+	- ==> +
+Note:
+====
+2's complement ==> 1's complement + 1
+1's complement ==> 0 ==> 1 & 1 ==> 0
+
+1) while calculating 2's complement,
+	if there is no carry at the last bit of the data:
+		==> we should calculate 2's complement for the result again
+	when we have performed the 2's complement for twise,
+		add -1 to above result.
+2) when there is carry while finding the 2's complement,
+	add that carry to the last bit (right side).
+
+print(~10)
+print(~0)
+print(~-10)
+
+=============================================
+
+3) BITWISE OR OPERATOR
+======================
+	a	b	a | b
+	===================
+	0b0	0b0	0b0
+	0b0	0b1	0b1
+	0b1	0b0	0b1
+	0b1	0b1	0b1
+
+print(0b0 | 0b0)
+print(0b0 | 0b1)
+print(0b1 | 0b0)
+print(0b1 | 0b1)
+
+print(10 | 20)
+print(True | False)
+
+# print(12.2 & 23.3)    # Type Error
+# print(12.2 | 23.3)
+
+============================================
+
+4) Bitwise Xor
+===========
+	a	b	a ^ b
+	=====================
+	0	0	0
+	0	1	1
+	1	0	1
+	1	1	0
+
+print(0 ^ 0)
+print(0 ^ 1)
+print(1 ^ 0)
+print(1 ^ 1)
+
+print(10 ^ 20)
+
+==========================================
+
+LEFT SHIFT OPERATOR
+=====================
+Syntax:
+	data << n.times
+
+Formual:
+=======
+	data * 2 ^ n.times
+
+Note:
+====
+left shift is always double the value
+
+RIGHT SHIFT OPERATOR
+==========================
+Syntax:
+	data >> n.times
+
+Formula:
+	data // 2^n.times
+
+Note:
+====
+because of the right shift the data should be half
+
+print(9 << 1)
+print(9 << 2)
+print(9 << 3)
+print(9 << 4)
+
+print(9 >> 1)
+print(9 >> 2)
+print(9 >> 3)
+print(9 >> 4)
+
+============================
+
+Operator Precedence & Associativity
+============================
+precedence ==> the order/rank
+associativity ==> direction
+
+a ** b + 2 * 23 ** 4
+
+1 - 2 * 3 / 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
